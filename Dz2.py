@@ -6,13 +6,13 @@ def SimpleNumber():
     else:
         temp = False
         for g in range(2, 11):
-            if number % g == 0 and number // 1: temp: False
-            if number % g != 0 and number // 1 and number % 2 != 0: temp = True
+            if number % g == 0 and number // 1 == number: temp = False
+            if number % g != 0 and number // 1 and number % 2 == 0: temp = True
 
         if temp:
             print(f"Число {number}, простое")
         else:
-            print(f"Число {number}, не простое")
+            print(f"Число {number}, составное")
 
 
 SimpleNumber()
